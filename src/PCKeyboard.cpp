@@ -62,7 +62,7 @@ void PCKeyboard::begin(uint8_t addr, TwoWire *wire)
 	*/
     m_wire->begin();
 	//m_wire->setClock(10000); // important
-    reset();
+    //reset(); // https://github.com/cuu/arduino_picocalc_kbd/issues/1
 }
 
 void PCKeyboard::reset()
